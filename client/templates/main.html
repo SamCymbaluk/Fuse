@@ -1,0 +1,33 @@
+---
+name: main
+url: /
+controller: MainController as vm
+---
+<span>
+  <div class="fuse-pointer" id="fuse-pointer"></div>
+
+  <div class="center-expand" id="center">
+  </div>
+
+  <div class="fuse-widget" id="time" style="position: absolute; top: 0px; left: 75%; padding: 15px;" ng-include="'templates/time.html'"></div>
+  <div class="fuse-widget" id="weather" style="width: 10%; position: absolute; top: 650px; left: 88%; padding: 15px;" ng-include="'templates/weather.html'"></div>
+  <div class="fuse-widget" id="twitter" style="width: 30%; position: absolute; top: 0px; left: 0px; padding: 15px;" ng-include="'templates/twitter.html'">Test</div>
+</span>
+<div class="expand">
+  <div style="border: 3px dashed #FFF; border-radius: 25px;">
+    <div id="time-expanded" ng-include="'templates/time-expanded.html'"></div>
+    <div id="weather-expanded" ng-include="'templates/weather-expanded.html'"></div>
+    <div id="twitter-expanded" ng-include="'templates/twitter-expanded.html'"></div>
+    <p style="text-align: center; font-style: italic;">Swipe down to dismiss</p>
+  </div>
+</div>
+
+<!--<button zf-open="panel" id="open-button" class="panel-button"></button>
+<button zf-close="panel" id="close-button" class="panel-button"></button>
+
+<div zf-panel="" id="panel" position="bottom">
+  <div class="grid-block">
+    <div class="fuse-page"></div>
+    <div class="fuse-page"></div>
+  </div>
+</div>-->
